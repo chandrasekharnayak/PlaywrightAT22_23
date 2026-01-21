@@ -1,0 +1,79 @@
+id------ id
+name ------ name
+class name ------ class
+tag--------------- tag name
+partial ---------------- partial string
+ link text---------------- complete link
+css ------
+xapth----
+
+get_by_test_id ---- data test id
+get_by_role_ ---- tag name and text
+get_by_label ---------- label ,
+get_by_placeholder -- placeholder
+get_by_text ------------- string
+locater(id,classname) #id , .classname
+locater(css)
+locater(xpath)
+get_by_title
+
+
+xpath :-
+
+
+features              xpath				css selectors
+
+speed					slower				faster
+readbility				Medium				high
+Backward traversal		yes					No
+Text Matching			yes					No
+Complex logic			strong              Limited
+learning curve          high				easy
+browser native			no                  yes
+supports indexing		yes					partial
+case sensitivity		yes					yes
+
+syntax comparision
+
+by id
+xpath = //tagname[@attribute='value'] , //section[@id='login-section']
+css selector = tagname[attribute = 'value'] , section[id='login-section']
+#id , #login-section
+
+class name
+.class name for converting into css selector
+
+1.text --- function or method of xpath but not working css
+
+//h1[text()=' XPath Practice Playground ']
+
+2.conatins :- use for full match or partial match
+its support both xapth and css
+
+xpath = //tagname[contains(@attribute/method,'value')]
+css = tagname[href='value']
+//a[contains(@href,'profile')], //a[contains(text(),'Profile ')]
+
+
+Absolute
+//body/section[4]/ul/li[4]
+
+css
+body section:nth-of-type(4) ul li:nth-of-type(4)
+
+types of using xpath
+
+1.using attribute
+2.using text()
+3.using contains()
+4.using starts-with snd using ends-with
+5. And /Or conditions
+6. indexing basede xpath
+7. Xpath Axes
+		1.parent
+		2.child
+		3.sibling
+			1.following sibling
+			2.preceding sibling
+		4.ancestor
+		5.descedant
