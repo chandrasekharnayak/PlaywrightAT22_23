@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wait Demo</title>
+    <script>
+        function showButton() {
+            setTimeout(() => {
+                document.getElementById("loginBtn").style.display = "block";
+            }, 35000);
+        }
+    </script>
+</head>
+
+<body onload="showButton()">
+    <h2>Playwright Wait Demo</h2>
+    <button id="loginBtn" style="display:none;">Login</button>
+</body>
+</html>
