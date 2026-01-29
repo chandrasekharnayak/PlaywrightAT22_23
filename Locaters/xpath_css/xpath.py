@@ -59,3 +59,4 @@ with sync_playwright() as babuli:
 
 
     browser.close()
+
