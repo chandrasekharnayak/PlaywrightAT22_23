@@ -9,15 +9,22 @@ with sync_playwright() as p:
     #open a link and hit in api and call the url
     page.goto(r"https://rahulshettyacademy.com/AutomationPractice/")
 
+    page.select_option("select", label="Option2") #---> select by visiable text
+    page.select_option("select",index=2) #-----> select by index
+
+
+    #auto suggestive
+
     page.fill("#autocomplete","us")
 
     elements = page.locator("li[class='ui-menu-item'] div")
     time.sleep(5)
     count = elements.count()
+    print(count)
 
 
     for i in range(count):
-        print(elements.nth(i).inner_text())
+        # print(elements.nth(i).inner_text())
         if "Australia" == elements.nth(i).inner_text():
             elements.nth(i).click()
 

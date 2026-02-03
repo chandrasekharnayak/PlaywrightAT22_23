@@ -39,12 +39,7 @@ with sync_playwright() as p:
     page.select_option("select",label="China")
 
 
-    #auto- suggestive dropdown
-    page.fill("#countrySearch",'us')
 
-    #press the things using keyboard
-    page.keyboard.press("ArrowDown")
-    page.keyboard.press("Enter")
 
 
     time.sleep(5)
